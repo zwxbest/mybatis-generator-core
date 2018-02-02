@@ -315,8 +315,14 @@ public class Context extends PropertyHolder {
     }
 
     //todo:
-    public boolean getXmlMergeable(){return  xmlMergeable;}
-    public boolean getJavaMergeable(){return  javaMergeable;}
+    public boolean getXmlMergeable(){
+        return xmlMergeable != null
+                && xmlMergeable.booleanValue();
+    }
+    public boolean getJavaMergeable(){
+        return javaMergeable != null
+                && javaMergeable.booleanValue();
+    }
 
     public String getEndingDelimiter() {
         return endingDelimiter;
