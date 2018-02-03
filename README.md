@@ -2,7 +2,7 @@
 
 replace  origin mybatis-generator-core 1.3.6 in your local repository with this.
 
-Then regenerated use maven plugin 1.3.6
+Then regenerated using maven plugin 1.3.6
 
 It will not override the existing content,only add the content you delete.
 
